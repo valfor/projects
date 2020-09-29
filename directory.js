@@ -13,7 +13,7 @@ function directory() {
   var groupText = {56:"Scotland",57:"Wales",58:"England",59:"NorthernIreland"};
   var users = [];
   var cnations = {"England":0, "Scotland":0, "Wales":0, "Northern Ireland":0};
-  var post = "";
+  post = "";
   for(var i = 0; i < groups.length; i++) {
     var Http = new XMLHttpRequest();
     var gurl = "https://nsuk.proboards.com/members?group="+groups[i]+"&view=group";
