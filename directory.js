@@ -1,10 +1,11 @@
 function directory() {
   // first load the list of UK nations from nationstates (api request)
-  var nationtext;
-  $.get("https://www.nationstates.net/cgi-bin/api.cgi?region=united_kingdom&q=numnations",function(data){nationtext = data});
-  parser = new DOMParser();
-  xmlDoc = parser.parseFromString(nationtext,"text/xml");
-  listOfNations = xmlDoc.getElementsByTagName("NATIONS")[0].innerHTML.split(":");
+  //var nationtext;
+  //$.get("https://www.nationstates.net/cgi-bin/api.cgi?region=united_kingdom&q=numnations",function(data){nationtext = data});
+  listOfNations = ["akillianuk","ostmount"]
+  //parser = new DOMParser();
+  //xmlDoc = parser.parseFromString(nationtext,"text/xml");
+  //listOfNations = xmlDoc.getElementsByTagName("NATIONS")[0].innerHTML.split(":");
   // then we are going to try to remain in the same session and grab the data we need for every user in every group
   // the constituent nation is defined as the users main nation
 
