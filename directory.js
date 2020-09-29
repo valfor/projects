@@ -26,8 +26,8 @@ function directory() {
     jdata = JSON.parse(gdata);
     for(var u in jdata) {
       var uname = jdata[u].name;
-      if(!listUsers.includes(uname)) {
-      listUsers.push(uname);
+      if(!users.includes(uname)) {
+      users.push(uname);
       var uurl = jdata[u].url;
       var uText;
       var Http1 = new XMLHttpRequest();
