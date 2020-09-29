@@ -44,7 +44,7 @@ function directory() {
       if(discord) {s += "[b]Discord:[/b] " + discord + "\n"} else {s += "[b]Discord:[/b] N/A\n"};
       if(mainnation) {s += "[b]Constituent Nation:[/b] " + mainnation + "\n"} else {s += "[b]Constituent Nation:[/b] N/A\n"};
       if(nsnation in listOfNations) {s += "[b][font color='green']Verified[/color][/b]"} else {s += "[b][font color='red']Nation CTE[/color][/b]"};
-      post += s + "\n";, 1500});
+      post += s + "\n";}, 1500);
       } else {continue}
     }
   } , 1500);
